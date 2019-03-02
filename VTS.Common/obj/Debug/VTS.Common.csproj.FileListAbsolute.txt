@@ -1,0 +1,9 @@
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Common\obj\Debug\VTS.Common.Properties.Resources.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Common\obj\Debug\VTS.Common.csproj.GenerateResource.Cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Common\obj\Debug\VTS.Common.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Common\bin\Debug\VTS.Common.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Common\bin\Debug\VTS.Common.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Common\bin\Debug\VTS.SystemConfig.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Common\bin\Debug\VTS.SystemConfig.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Common\obj\Debug\VTS.Common.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Common\obj\Debug\VTS.Common.pdb

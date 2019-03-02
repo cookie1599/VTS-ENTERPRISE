@@ -1,0 +1,21 @@
+E:\WORK\VSS\RESKRIMSUS\DirectX.Capture\bin\Debug\DirectX.Capture.dll
+E:\WORK\VSS\RESKRIMSUS\DirectX.Capture\bin\Debug\DirectX.Capture.pdb
+E:\WORK\VSS\RESKRIMSUS\DirectX.Capture\bin\Debug\DShowNET.dll
+E:\WORK\VSS\RESKRIMSUS\DirectX.Capture\bin\Debug\DShowNET.pdb
+E:\WORK\VSS\RESKRIMSUS\DirectX.Capture\obj\Debug\DirectX.Capture.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\RESKRIMSUS\DirectX.Capture\obj\Debug\DirectX.Capture.dll
+E:\WORK\VSS\RESKRIMSUS\DirectX.Capture\obj\Debug\DirectX.Capture.pdb
+E:\WORK\VSS\VTS ENTERPRISE\DirectX.Capture\bin\Debug\DirectX.Capture.dll
+E:\WORK\VSS\VTS ENTERPRISE\DirectX.Capture\bin\Debug\DirectX.Capture.pdb
+E:\WORK\VSS\VTS ENTERPRISE\DirectX.Capture\bin\Debug\DShowNET.dll
+E:\WORK\VSS\VTS ENTERPRISE\DirectX.Capture\bin\Debug\DShowNET.pdb
+E:\WORK\VSS\VTS ENTERPRISE\DirectX.Capture\obj\Debug\DirectX.Capture.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\VTS ENTERPRISE\DirectX.Capture\obj\Debug\DirectX.Capture.dll
+E:\WORK\VSS\VTS ENTERPRISE\DirectX.Capture\obj\Debug\DirectX.Capture.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DirectX.Capture\bin\Debug\DirectX.Capture.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DirectX.Capture\bin\Debug\DirectX.Capture.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DirectX.Capture\bin\Debug\DShowNET.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DirectX.Capture\bin\Debug\DShowNET.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DirectX.Capture\obj\Debug\DirectX.Capture.csprojResolveAssemblyReference.cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DirectX.Capture\obj\Debug\DirectX.Capture.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DirectX.Capture\obj\Debug\DirectX.Capture.pdb

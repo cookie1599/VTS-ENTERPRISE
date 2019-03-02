@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Reskrimsus.CustomControl.csproj]
+SCC_Aux_Path = "Z:\VSS\POLDA2013"
+SCC_Project_Name = "$/Reskrimsus.root/Reskrimsus/Reskrimsus.CustomControl", MDAAAAAA
+
+[VTS.CustomControl.csproj]
+SCC_Aux_Path = "Z:\VSS\VTS"
+SCC_Project_Name = "$/VTS.root/VTS/VTS.CustomControl", ZDAAAAAA

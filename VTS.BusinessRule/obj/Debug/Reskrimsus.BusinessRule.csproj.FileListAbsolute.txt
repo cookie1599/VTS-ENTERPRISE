@@ -1,0 +1,14 @@
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\bin\Debug\Reskrimsus.BusinessRule.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\bin\Debug\Reskrimsus.BusinessRule.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\bin\Debug\Reskrimsus.BusinessEntity.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\bin\Debug\Reskrimsus.SystemConfig.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\bin\Debug\Reskrimsus.BusinessEntity.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\bin\Debug\Reskrimsus.SystemConfig.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\obj\Debug\Reskrimsus.BusinessRule.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\obj\Debug\Reskrimsus.BusinessRule.Properties.Resources.resources
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\obj\Debug\Reskrimsus.BusinessRule.csproj.GenerateResource.Cache
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\obj\Debug\Reskrimsus.BusinessRule.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessRule\obj\Debug\Reskrimsus.BusinessRule.pdb

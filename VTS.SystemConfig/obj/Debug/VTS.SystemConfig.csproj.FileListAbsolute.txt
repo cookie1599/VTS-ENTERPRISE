@@ -1,0 +1,16 @@
+E:\WORK\VSS\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.Properties.Resources.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.csproj.GenerateResource.Cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.SystemConfig\bin\Debug\VTS.SystemConfig.dll.config
+E:\WORK\VSS\VTS ENTERPRISE\VTS.SystemConfig\bin\Debug\VTS.SystemConfig.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.SystemConfig\bin\Debug\VTS.SystemConfig.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.SystemConfig\bin\Debug\VTS.SystemConfig.dll.config
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.SystemConfig\bin\Debug\VTS.SystemConfig.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.SystemConfig\bin\Debug\VTS.SystemConfig.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.csprojResolveAssemblyReference.cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.Properties.Resources.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.csproj.GenerateResource.Cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.SystemConfig\obj\Debug\VTS.SystemConfig.pdb

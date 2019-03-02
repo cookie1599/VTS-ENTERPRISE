@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="VTS_Development" Class="BusinessEntitiesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.100.1\DEVELOPMENT;Initial Catalog=VTS_Development;User ID=sa" SettingsObjectName="VTS.BusinessEntity.Properties.Settings" SettingsPropertyName="VTS_DevelopmentConnectionString13" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Vw_Question" Member="Vw_Questions">
+    <Type Name="Vw_Question">
+      <Column Name="QuestionId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="FgOptional" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Answer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Grade" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vw_VisitForKuisioner" Member="Vw_VisitForKuisioners">
+    <Type Name="Vw_VisitForKuisioner">
+      <Column Name="VisitId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DateIn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.companyconfiguration" Member="companyconfigurations">
+    <Type Name="companyconfiguration">
+      <Column Name="ConfigCode" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SetValue" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="ConfigDescription" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="GroupConfig" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="AllowEdit" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="SortNo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Visible" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="ValueType" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="SqlExpr" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vw_ValidasiCheckInOut" Member="Vw_ValidasiCheckInOuts">
+    <Type Name="Vw_ValidasiCheckInOut">
+      <Column Name="VisitId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Photo" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="RFID" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Tipe" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SMSGatewaySend" Member="SMSGatewaySends">
+    <Type Name="SMSGatewaySend">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DestinationPhoneNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="flagSend" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="userID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DateSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OrganizationID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="fgMasking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MaskingStatus" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_RequestVisit" Member="vw_RequestVisits">
+    <Type Name="vw_RequestVisit">
+      <Column Name="RequestId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="RequestCode" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="RequestDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VisitorType" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IdType" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IdNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PenyidikId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PenyidikName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PenyidikPhone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsContactUs" Member="WsContactUs">
+    <Type Name="WsContactUs">
+      <Column Name="ContactUsId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsDPO" Member="WsDPOs">
+    <Type Name="WsDPO">
+      <Column Name="DPOId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DPOName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsInformation" Member="WsInformations">
+    <Type Name="WsInformation">
+      <Column Name="InformationId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InformationName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsNews" Member="WsNews">
+    <Type Name="WsNew">
+      <Column Name="NewsId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NewsName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsStructure" Member="WsStructures">
+    <Type Name="WsStructure">
+      <Column Name="StructureId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StructureName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="NotesTitle" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NotesName" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrSMSLog" Member="TrSMSLogs">
+    <Type Name="TrSMSLog">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DestinationPhoneNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="DateSent" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FgSync" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsMenu" Member="MsMenus">
+    <Type Name="MsMenu">
+      <Column Name="MenuId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ParentID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NavigateURL" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Indent" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="SiteMapURL" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsMenuPermission" Member="MsMenuPermissions">
+    <Type Name="MsMenuPermission">
+      <Column Name="MenuId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FgAdd" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgEdit" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgView" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgDelete" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsPenyidikHd" Member="MsPenyidikHds">
+    <Type Name="MsPenyidikHd">
+      <Column Name="PenyidikId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PenyidikNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PhoneAlternative" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="EmailAlternative" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsPenyidikTemp" Member="MsPenyidikTemps">
+    <Type Name="MsPenyidikTemp">
+      <Column Name="TempId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsQuestionDt" Member="MsQuestionDts">
+    <Type Name="MsQuestionDt">
+      <Column Name="QuestionId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Answer" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Grade" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsQuestionHd" Member="MsQuestionHds">
+    <Type Name="MsQuestionHd">
+      <Column Name="QuestionId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FgOptional" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsRole" Member="MsRoles">
+    <Type Name="MsRole">
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsRoleMenu" Member="MsRoleMenus">
+    <Type Name="MsRoleMenu">
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MenuId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FgAdd" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgEdit" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgView" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgDelete" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsUserRole" Member="MsUserRoles">
+    <Type Name="MsUserRole">
+      <Column Name="UserId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Temp_Penyidik" Member="Temp_Penyidiks">
+    <Type Name="Temp_Penyidik">
+      <Column Name="PenyidikId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PenyidikName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="DivisionId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DisionName" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="PenyidikNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TempMenuPermission" Member="TempMenuPermissions">
+    <Type Name="TempMenuPermission">
+      <Column Name="UserId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Roleid" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MenuId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ParentID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NavigateURL" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FgAdd" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgEdit" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgView" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgDelete" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrRequestVisit" Member="TrRequestVisits">
+    <Type Name="TrRequestVisit">
+      <Column Name="RequestId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RequestCode" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="RequestDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VisitorType" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IdType" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IdNumber" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PenyidikId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsLinks" Member="WsLinks">
+    <Type Name="WsLink">
+      <Column Name="NoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NamaLink" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Link" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsInfoPenyidikan" Member="WsInfoPenyidikans">
+    <Type Name="WsInfoPenyidikan">
+      <Column Name="InfoPenyidikanId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Body" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_Penyidik" Member="vw_Penyidiks">
+    <Type Name="vw_Penyidik">
+      <Column Name="PenyidikId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="PenyidikNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DivisionId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DivisionName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PhoneAlternative" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="EmailAlternative" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_RoleMenu" Member="vw_RoleMenus">
+    <Type Name="vw_RoleMenu">
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="MenuId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentID" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="FgAdd" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgEdit" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgView" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgDelete" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsGalleryEvent" Member="WsGalleryEvents">
+    <Type Name="WsGalleryEvent">
+      <Column Name="EventId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EventTitle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EventDescription" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="EventFile" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="EventPeriod" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_ContentCategory" Member="vw_ContentCategories">
+    <Type Name="vw_ContentCategory">
+      <Column Name="Category" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Contents" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ImageFile" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NavigateURL" Type="System.String" DbType="VarChar(52)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_GalleryEvent" Member="vw_GalleryEvents">
+    <Type Name="vw_GalleryEvent">
+      <Column Name="Year" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsGalleryVideo" Member="WsGalleryVideos">
+    <Type Name="WsGalleryVideo">
+      <Column Name="VideoId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VideoTitle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VideoDescription" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="VideoFile" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="VideoPeriod" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_GalleryVideoYear" Member="vw_GalleryVideoYears">
+    <Type Name="vw_GalleryVideoYear">
+      <Column Name="Year" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_MenuPermission" Member="vw_MenuPermissions">
+    <Type Name="vw_MenuPermission">
+      <Column Name="MenuId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Parent" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Indent" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="FgView" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgAdd" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgEdit" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgDelete" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="FgParent" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsUser" Member="MsUsers">
+    <Type Name="MsUser">
+      <Column Name="UserId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordQuestion" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="PasswordAnswer" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Photo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsRegulation" Member="WsRegulations">
+    <Type Name="WsRegulation">
+      <Column Name="NoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NoUrut" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NamaFile" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DownloadLink" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsBanner" Member="WsBanners">
+    <Type Name="WsBanner">
+      <Column Name="BannerId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BannerName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Body" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsUndangUndang" Member="WsUndangUndangs">
+    <Type Name="WsUndangUndang">
+      <Column Name="NoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NoUrut" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NamaFile" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DownloadLink" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrSuratLPDt" Member="TrSuratLPDts">
+    <Type Name="TrSuratLPDt">
+      <Column Name="NOLP" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NOSP2HP" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TanggalSP2HP" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FileSP2HP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsEmailSetup" Member="MsEmailSetups">
+    <Type Name="MsEmailSetup">
+      <Column Name="EmailID" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmailFrom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailTo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailCc" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailSubject" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="EmailBody" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrSuratLPHd" Member="TrSuratLPHds">
+    <Type Name="TrSuratLPHd">
+      <Column Name="NOLP" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NIK" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TanggalLP" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOSPRINDIK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TanggalSPRINDIK" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsPelaporLP" Member="MsPelaporLPs">
+    <Type Name="MsPelaporLP">
+      <Column Name="NIK" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NamaPelapor" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordPelapor" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_SuratPelaporLP" Member="vw_SuratPelaporLPs">
+    <Type Name="vw_SuratPelaporLP">
+      <Column Name="NOLP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NIK" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NamaPelapor" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TanggalLP" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOSPRINDIK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TanggalSPRINDIK" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vw_SuratLP" Member="vw_SuratLPs">
+    <Type Name="vw_SuratLP">
+      <Column Name="NOLP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TanggalLP" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOSP2HP" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TanggalSP2HP" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FileSP2HP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NIK" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NamaPelapor" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordPelapor" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NOSPRINDIK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TanggalSPRINDIK" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrSuratLPDtEmail" Member="TrSuratLPDtEmails">
+    <Type Name="TrSuratLPDtEmail">
+      <Column Name="LPEmailID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOLP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOSP2HP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailFrom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailTo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailCc" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailSubject" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="EmailBody" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Sent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.Char" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LastCreatedAndEditDate" Member="LastCreatedAndEditDates">
+    <Type Name="LastCreatedAndEditDate">
+      <Column Name="LastCreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastEditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrVisitHd" Member="TrVisitHds">
+    <Type Name="TrVisitHd">
+      <Column Name="VisitId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RequestId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="VisitorType" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="IdType" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="IdNumber" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PhotoIDCARD" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="RFID" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PenyidikId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Poling" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DateIn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateOut" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FgQuesioner" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrVisitQuestion" Member="TrVisitQuestions">
+    <Type Name="TrVisitQuestion">
+      <Column Name="VisitId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="QuestionId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemNo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AnswerText" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsDivision" Member="MsDivisions">
+    <Type Name="MsDivision">
+      <Column Name="DivisionId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DivisionName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsCommunityReport" Member="WsCommunityReports">
+    <Type Name="WsCommunityReport">
+      <Column Name="CommunityId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CommunityName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsHimbauan" Member="WsHimbauans">
+    <Type Name="WsHimbauan">
+      <Column Name="HimbauanId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HimbauanName" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Body" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsLaporanMasyarakat" Member="WsLaporanMasyarakats">
+    <Type Name="WsLaporanMasyarakat">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nama" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Handphone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Perihal" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Pesan" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FgActive" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WsZonaIntegritas" Member="WsZonaIntegritas">
+    <Type Name="WsZonaIntegrita">
+      <Column Name="NoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NoUrut" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NamaFile" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DownloadLink" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LogPetugas" Member="LogPetugas">
+    <Type Name="LogPetuga">
+      <Column Name="LogID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PetugasID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PetugasName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MsPetugas" Member="MsPetugas">
+    <Type Name="MsPetuga">
+      <Column Name="PetugasId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PetugasNumber" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PetugasName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Division" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="PhoneAlternative" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailAlternative" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FgActive" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditBy" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_InsertVisit" Method="sp_InsertVisit">
+    <Parameter Name="RequestId" Parameter="requestId" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IdType" Parameter="idType" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="IdNumber" Parameter="idNumber" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Photo" Parameter="photo" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="PenyidikId" Parameter="penyidikId" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="NewPenyidik" Parameter="newPenyidik" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="RFID" Parameter="rFID" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="FgQuesioner" Parameter="fgQuesioner" Type="System.Char" DbType="VarChar(1)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

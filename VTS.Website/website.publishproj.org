@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+***********************************************************************************************
+website.publishproj
+
+WARNING: DO NOT MODIFY this file, it is used for the web publish process.
+
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+***********************************************************************************************
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f0df42fb-e59f-4fcb-a1d0-7eee8f2b262f}</ProjectGuid>
+    <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
+    <SourceWebVirtualPath>/Reskrimsus.Website</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SourceWebProject>D:\Working folder\POLDA2013\Reskrimsus.Website</SourceWebProject>
+    <SourceWebMetabasePath>/IISExpress/7.5/LM/W3SVC/6/ROOT</SourceWebMetabasePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- for VS2010 we need to use 10.5 but for VS2012+ we should use VisualStudioVersion -->
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)' =='' and '$(VisualStudioVersion)' == 10.0 ">10.5</WebPublishTargetsVersion>
+    <WebPublishTargetsVersion Condition=" '$(WebPublishTargetsVersion)'=='' ">$(VisualStudioVersion)</WebPublishTargetsVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(WebPublishTargetsVersion)</VSToolsPath>
+    <_WebPublishTargetsPath Condition=" '$(_WebPublishTargetsPath)'=='' ">$(VSToolsPath)</_WebPublishTargetsPath>
+    <AssemblyFileVersion Condition="'$(AssemblyFileVersion)' == ''">1.0.0.0</AssemblyFileVersion>
+    <AssemblyVersion Condition="'$(AssemblyVersion)' == ''">1.0.0.0</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Reskrimsus.BusinessEntity\Reskrimsus.BusinessEntity.csproj">
+      <Project>{AC5107E4-3153-4FAD-AD91-677CD2238E46}</Project>
+      <Name>Reskrimsus.BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reskrimsus.BusinessRule\Reskrimsus.BusinessRule.csproj">
+      <Project>{58A9ECA1-8A3D-4B28-94E0-FC50A88B77AA}</Project>
+      <Name>Reskrimsus.BusinessRule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reskrimsus.Common\Reskrimsus.Common.csproj">
+      <Project>{001057E2-BAF4-4A84-A84D-7003552B89BB}</Project>
+      <Name>Reskrimsus.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reskrimsus.CustomControl\Reskrimsus.CustomControl.csproj">
+      <Project>{D4224996-7BC1-4C6F-B892-AAB09A249D4C}</Project>
+      <Name>Reskrimsus.CustomControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reskrimsus.Mapping\Reskrimsus.Mapping.csproj">
+      <Project>{A23C5AF9-392D-47DA-BFA5-2D5224F71BB8}</Project>
+      <Name>Reskrimsus.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reskrimsus.SystemConfig\Reskrimsus.SystemConfig.csproj">
+      <Project>{86D91CBE-174E-4799-A3B8-BEE81A15B90F}</Project>
+      <Name>Reskrimsus.SystemConfig</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(_WebPublishTargetsPath)\Web\Microsoft.WebSite.Publishing.targets" />
+</Project>

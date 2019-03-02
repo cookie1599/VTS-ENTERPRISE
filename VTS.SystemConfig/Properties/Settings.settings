@@ -1,0 +1,85 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Reskrimsus.SystemConfig.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RequestPageKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Page</Value>
+    </Setting>
+    <Setting Name="ListPageSize" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="DataPagerRange" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="EncryptionKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">:))</Value>
+    </Setting>
+    <Setting Name="CompanyName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Reskrimsus</Value>
+    </Setting>
+    <Setting Name="CookieName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Name</Value>
+    </Setting>
+    <Setting Name="CookiePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password</Value>
+    </Setting>
+    <Setting Name="CookieDatabaseID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DataBaseID</Value>
+    </Setting>
+    <Setting Name="LoginLifeTimeExpired" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="CookiesPreferences" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PreferencesEMS</Value>
+    </Setting>
+    <Setting Name="StringSeparatorPublish" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">/Content/</Value>
+    </Setting>
+    <Setting Name="CookieCompanyID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server</Value>
+    </Setting>
+    <Setting Name="CookieDatabaseName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DatabaseName</Value>
+    </Setting>
+    <Setting Name="UID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="PWD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">web@ccess.1</Value>
+    </Setting>
+    <Setting Name="ConnStringMembership" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=43.229.207.48\PRODUCTION; UID=sa; PWD=web@ccess.1; Database=VTS_Development;</Value>
+    </Setting>
+    <Setting Name="ConnStringDev" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=43.229.207.48\PRODUCTION; UID=sa; PWD=web@ccess.1; Database=VTS_Development;
+Server=27.111.36.30\sqlexpress; UID=sa; PWD=web@ccess.1; Database=VTS_Development;
+Server=103.18.44.2\production; UID=sa; PWD=web@ccess.1; Database=VTS_Development;
+Server=103.69.64.18\production; UID=sa; PWD=web@ccess.1; Database=VTS_Development;
+Server=43.229.207.48\PRODUCTION; UID=sa; PWD=web@ccess.1; Database=VTS_Production;
+Server=192.168.100.1\development; UID=sa; PWD=web@ccess.1; Database=VTS_Development;</Value>
+    </Setting>
+    <Setting Name="ConnStringMembershipDev" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=43.229.207.48\PRODUCTION; UID=sa; PWD=web@ccess.1; Database=VTS_Development;</Value>
+    </Setting>
+    <Setting Name="ConnString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=192.168.100.1\development; UID=sa; PWD=web@ccess.1; Database=VTS_Development;</Value>
+    </Setting>
+    <Setting Name="ConnStringSMS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=27.111.36.6\production; UID=smsportal; PWD=smsportal.123; Database=SMSPortal;</Value>
+    </Setting>
+    <Setting Name="ConnStringSMSDev" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=192.168.100.1\development; UID=sa; PWD=web@ccess.1; Database=SMSPortal;
+Server=27.111.36.6\production; UID=smsportal; PWD=smsportal.123; Database=SMSPortal;</Value>
+    </Setting>
+    <Setting Name="CookieNIK" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NIK</Value>
+    </Setting>
+    <Setting Name="ConnStringLocal" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=192.168.100.1\development; UID=sa; PWD=web@ccess.1; Database=VTS_Development;</Value>
+    </Setting>
+    <Setting Name="ConnStringLocalDev" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=localhost\Dev2012; UID=sa; PWD=web@ccess.1; Database=VTSLocal_Development;
+Server=192.168.100.1\development; UID=sa; PWD=web@ccess.1; Database=VTS_Development;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

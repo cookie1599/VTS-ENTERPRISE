@@ -1,0 +1,7 @@
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Mapping\bin\Debug\VTS.Mapping.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Mapping\bin\Debug\VTS.Mapping.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Mapping\obj\Debug\VTS.Mapping.Properties.Resources.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Mapping\obj\Debug\VTS.Mapping.csproj.GenerateResource.Cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Mapping\obj\Debug\VTS.Mapping.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Mapping\obj\Debug\VTS.Mapping.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.Mapping\obj\Debug\VTS.Mapping.csprojResolveAssemblyReference.cache

@@ -1,0 +1,16 @@
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.Properties.Resources.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.csproj.GenerateResource.Cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessEntity\bin\Debug\VTS.BusinessEntity.dll.config
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessEntity\bin\Debug\VTS.BusinessEntity.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessEntity\bin\Debug\VTS.BusinessEntity.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.csprojResolveAssemblyReference.cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessEntity\bin\Debug\VTS.BusinessEntity.dll.config
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessEntity\bin\Debug\VTS.BusinessEntity.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessEntity\bin\Debug\VTS.BusinessEntity.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.csprojResolveAssemblyReference.cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.Properties.Resources.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.csproj.GenerateResource.Cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessEntity\obj\Debug\VTS.BusinessEntity.pdb

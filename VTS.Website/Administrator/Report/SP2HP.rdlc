@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="VTS_Development">
+      <rd:DataSourceID>b6d41807-1ef1-4234-94b1-cc3fcff5d06c</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=103.69.64.18\production;Initial Catalog=VTS_Development</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="NOSP2HP">
+      <DataType>String</DataType>
+      <Prompt>NOSP2HP</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NOLP">
+      <DataType>String</DataType>
+      <Prompt>NOLP</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <BottomMargin>1in</BottomMargin>
+  <rd:ReportID>c5996508-50c4-4f26-a53b-f024f7cb8960</rd:ReportID>
+  <DataSets>
+    <DataSet Name="VTS_Development">
+      <Fields>
+        <Field Name="FileSP2HP">
+          <DataField>FileSP2HP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>VTS_Development</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>GetSP2HP</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@NOSP2HP">
+            <Value>=Parameters!NOSP2HP.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@NOLP">
+            <Value>=Parameters!NOLP.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <Width>8.267in</Width>
+  <Body>
+    <ReportItems>
+      <Image Name="image1">
+        <Sizing>FitProportional</Sizing>
+        <Top>0.375in</Top>
+        <Width>7.25in</Width>
+        <Source>External</Source>
+        <Style />
+        <Left>0.5in</Left>
+        <Height>10.875in</Height>
+        <Value>=Fields!FileSP2HP.Value</Value>
+      </Image>
+    </ReportItems>
+    <Height>11.692in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

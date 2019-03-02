@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5283DD28-D95A-48A6-BEB2-A1525F8F74EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VTS.exe</RootNamespace>
+    <AssemblyName>VTS.exe</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>VTS.exe.Program</StartupObject>
+    <ManifestCertificateThumbprint>10229321239CA1FBC6F69B0AB3F8DC879BCBDF0B</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Reskrimsus.VTS_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>D:\WorkingFolder\Reskrimsus\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>31</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CapturePhoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapturePhoto.Designer.cs">
+      <DependentUpon>CapturePhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PemilihanPetugas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PemilihanPetugas.Designer.cs">
+      <DependentUpon>PemilihanPetugas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoosePenyidik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoosePenyidik.Designer.cs">
+      <DependentUpon>ChoosePenyidik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TerimaKasih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TerimaKasih.Designer.cs">
+      <DependentUpon>TerimaKasih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterDetail.Designer.cs">
+      <DependentUpon>RegisterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polling.Designer.cs">
+      <DependentUpon>Polling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notification.Designer.cs">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerifikasiPhone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifikasiPhone.Designer.cs">
+      <DependentUpon>VerifikasiPhone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Verifikasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verifikasi.Designer.cs">
+      <DependentUpon>Verifikasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CapturePhoto.resx">
+      <DependentUpon>CapturePhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PemilihanPetugas.resx">
+      <DependentUpon>PemilihanPetugas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoosePenyidik.resx">
+      <DependentUpon>ChoosePenyidik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TerimaKasih.resx">
+      <DependentUpon>TerimaKasih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterDetail.resx">
+      <DependentUpon>RegisterDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polling.resx">
+      <DependentUpon>Polling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notification.resx">
+      <DependentUpon>Notification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifikasiPhone.resx">
+      <DependentUpon>VerifikasiPhone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verifikasi.resx">
+      <DependentUpon>Verifikasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanRFID.resx">
+      <DependentUpon>ScanRFID.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reskrimsus.VTS_TemporaryKey.pfx" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ScanRFID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanRFID.Designer.cs">
+      <DependentUpon>ScanRFID.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DirectX.Capture\DirectX.Capture.csproj">
+      <Project>{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}</Project>
+      <Name>DirectX.Capture</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTS.BusinessEntity\VTS.BusinessEntity.csproj">
+      <Project>{AC5107E4-3153-4FAD-AD91-677CD2238E46}</Project>
+      <Name>VTS.BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTS.BusinessRule\VTS.BusinessRule.csproj">
+      <Project>{58A9ECA1-8A3D-4B28-94E0-FC50A88B77AA}</Project>
+      <Name>VTS.BusinessRule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VTS.SystemConfig\VTS.SystemConfig.csproj">
+      <Project>{86d91cbe-174e-4799-a3b8-bee81a15b90f}</Project>
+      <Name>VTS.SystemConfig</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="ADODB">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevComponents.DotNetBar2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WebForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_registrasi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\form_registrasi2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_form_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FORM_no_reg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LANJUT.png" />
+    <None Include="Resources\LANJUT_OFF.png" />
+    <None Include="Resources\YA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\batal_button.png" />
+    <None Include="Resources\iconAdd.png" />
+    <Content Include="Resources\ReRun.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\YA_OFF.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

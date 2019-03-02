@@ -1,0 +1,7 @@
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.SystemConfig\bin\Debug\Reskrimsus.SystemConfig.dll.config
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.SystemConfig\bin\Debug\Reskrimsus.SystemConfig.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.SystemConfig\bin\Debug\Reskrimsus.SystemConfig.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.SystemConfig\obj\Debug\Reskrimsus.SystemConfig.Properties.Resources.resources
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.SystemConfig\obj\Debug\Reskrimsus.SystemConfig.csproj.GenerateResource.Cache
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.SystemConfig\obj\Debug\Reskrimsus.SystemConfig.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.SystemConfig\obj\Debug\Reskrimsus.SystemConfig.pdb

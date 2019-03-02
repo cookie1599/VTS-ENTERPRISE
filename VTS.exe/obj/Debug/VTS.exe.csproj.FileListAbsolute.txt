@@ -1,0 +1,51 @@
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.csproj.GenerateResource.Cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.CapturePhoto.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.PemilihanPetugas.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.CheckOut.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.TerimaKasih.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Polling.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Properties.Resources.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.RegisterDetail.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Register.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Verifikasi.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.ChoosePenyidik.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Notification.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.VerifikasiPhone.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.ScanRFID.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\Resources\ReRun.bat
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.exe.exe.manifest
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.exe.application
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.exe.exe
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.exe.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\DirectX.Capture.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.BusinessEntity.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.BusinessRule.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.SystemConfig.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\DShowNET.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\DirectX.Capture.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.BusinessEntity.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.BusinessRule.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\VTS.SystemConfig.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\bin\Debug\DShowNET.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.exe.manifest
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.application
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.exe
+E:\WORK\VSS\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.exe
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.csprojResolveAssemblyReference.cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.CapturePhoto.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.PemilihanPetugas.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.ChoosePenyidik.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.CheckOut.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.TerimaKasih.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.RegisterDetail.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Register.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Polling.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Notification.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.VerifikasiPhone.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Verifikasi.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.Properties.Resources.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.ScanRFID.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.exe\obj\Debug\VTS.exe.csproj.GenerateResource.Cache

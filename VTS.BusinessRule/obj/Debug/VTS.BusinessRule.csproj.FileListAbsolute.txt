@@ -1,0 +1,28 @@
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.Properties.Resources.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.csproj.GenerateResource.Cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.BusinessRule.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.BusinessRule.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.BusinessEntity.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.SystemConfig.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.BusinessEntity.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.SystemConfig.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.BusinessRule.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.BusinessRule.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\Microsoft.ReportViewer.Common.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.BusinessEntity.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.SystemConfig.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.BusinessEntity.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\bin\Debug\VTS.SystemConfig.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.csprojResolveAssemblyReference.cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.Properties.Resources.resources
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.csproj.GenerateResource.Cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\VTS.BusinessRule\obj\Debug\VTS.BusinessRule.pdb

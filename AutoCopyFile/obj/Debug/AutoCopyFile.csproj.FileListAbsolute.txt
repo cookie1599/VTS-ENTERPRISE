@@ -1,0 +1,12 @@
+E:\WORK\VSS\RESKRIMSUS\AutoCopyFile\bin\Debug\AutoCopyFile.exe.config
+E:\WORK\VSS\RESKRIMSUS\AutoCopyFile\bin\Debug\AutoCopyFile.exe
+E:\WORK\VSS\RESKRIMSUS\AutoCopyFile\bin\Debug\AutoCopyFile.pdb
+E:\WORK\VSS\RESKRIMSUS\AutoCopyFile\obj\Debug\AutoCopyFile.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\RESKRIMSUS\AutoCopyFile\obj\Debug\AutoCopyFile.exe
+E:\WORK\VSS\RESKRIMSUS\AutoCopyFile\obj\Debug\AutoCopyFile.pdb
+E:\WORK\VSS\VTS ENTERPRISE\AutoCopyFile\bin\Debug\AutoCopyFile.exe.config
+E:\WORK\VSS\VTS ENTERPRISE\AutoCopyFile\bin\Debug\AutoCopyFile.exe
+E:\WORK\VSS\VTS ENTERPRISE\AutoCopyFile\bin\Debug\AutoCopyFile.pdb
+E:\WORK\VSS\VTS ENTERPRISE\AutoCopyFile\obj\Debug\AutoCopyFile.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\VTS ENTERPRISE\AutoCopyFile\obj\Debug\AutoCopyFile.exe
+E:\WORK\VSS\VTS ENTERPRISE\AutoCopyFile\obj\Debug\AutoCopyFile.pdb

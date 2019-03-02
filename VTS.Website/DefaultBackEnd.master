@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DefaultBackEnd.master.cs"
+    Inherits="DefaultBackEnd" %>
+
+<%--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">--%>
+<!DOCTYPE HTML>
+<html>
+<head runat="server">
+    <title>Untitled Page</title>
+    <link type="text/css" href="Content/Css/Style.css" rel="Stylesheet" />
+    <link type="text/css" href="Content/Css/menu.css" rel="Stylesheet" />
+
+    <script src="Content/jquery-3.1.1.min.js" type="text/javascript"></script>
+
+    <script  src="Content/Js/custom.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .navbar
+        {
+            background-color: #8B4513;
+            box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.4) inset, 0 5px 5px -5px rgba(0, 0, 0, 0.4) inset;
+            height: 40px;
+            margin-bottom: 12px;
+            min-width: 988px;
+            position: relative;
+            z-index: 1000;
+        }
+        .ctl00_Menu1_1
+        {
+            margin-top: -21px;
+            text-decoration: none;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        .ctl00_Menu1_1 img
+        {
+            display: none;
+        }
+        .opacityMenu
+        {
+            border-radius: 0px 10px 0px 10px;
+        }
+    </style>
+    <style type="text/css">
+        select
+        {
+            padding-left: 5px;
+            padding-right: 5px;
+            height: 30px;
+            border: solid 1px #ABADB3;
+            border-radius: 4px;
+        }
+        select:focus
+        {
+            border-color: #FEBD5E;
+            border: solid 1px #FEBD5E;
+            border-radius: 4px;
+        }
+        input[type=text]:focus, textarea:focus, input[type=password]:focus
+        {
+            border-color: #FEBD5E;
+            border: solid 1px# FEBD5E;
+            border-radius: 4px;
+            width: 250px;
+        }
+        input[type=text], textarea, input[type=password]
+        {
+            border: solid 1px #ABADB3;
+            border-radius: 4px;
+            height: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 200px;
+            -webkit-transition: width .35s ease-in-out;
+            transition: width .35s ease-in-out;
+            font-family: segoe ui;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="navbar" style="height: 37px; width: 100%;">
+            <div class="block-inner">
+                <asp:HiddenField ID="MenuId" runat="server" />
+                <asp:Menu ID="Menu1" runat="server" DynamicHorizontalOffset="0" Font-Names="Verdana"
+                    Font-Size="10px" ForeColor="White" StaticSubMenuIndent="10px" MaximumDynamicDisplayLevels="5"
+                    Orientation="Horizontal" CssClass="ctl00_Menu1_1" OnMenuItemClick="Menu1_MenuItemClick">
+                    <StaticSelectedStyle Font-Bold="true" BackColor="#FFCC66" />
+                    <StaticMenuItemStyle Font-Bold="true" HorizontalPadding="2px" ItemSpacing="1px" />
+                    <DynamicHoverStyle Font-Bold="true" ForeColor="#FFCC66" />
+                    <DynamicMenuStyle CssClass="opacityMenu" BackColor="#8B4513" />
+                    <DynamicSelectedStyle Font-Bold="true" BackColor="#FFCC66" />
+                    <DynamicMenuItemStyle Font-Bold="true" HorizontalPadding="2px" />
+                    <StaticHoverStyle Font-Bold="true" ForeColor="#FFCC66" />
+                </asp:Menu>
+                <%-- <nav>
+                   <ul class="nav topnav bold">
+                        <li class="dropdown"><asp:LinkButton ID="MasterLink" runat="server" Text="Master" CausesValidation=false ></asp:LinkButton>
+                             <ul class="dropdown-menu bold" style="display:none;">
+                                <li>
+                                   <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton>
+                                <ul style="display: none;" class="dropdown-menu sub-menu-level1 bold">
+                                 <li>
+                                   <asp:LinkButton ID="LinkButton10" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                         <li> <asp:LinkButton ID="LinkButton11" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                            <li> <asp:LinkButton ID="LinkButton12" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                                <li><asp:LinkButton ID="LinkButton13" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                                 <li>  <asp:LinkButton ID="LinkButton14" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                                    <li>  <asp:LinkButton ID="LinkButton15" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton>
+                                 </li>
+                                 </ul>
+                                </li>
+                                 <li>
+                                   <asp:LinkButton ID="LinkButton9" runat="server" CausesValidation=false PostBackUrl="#" Text="Website Manager"></asp:LinkButton>
+                                 <ul style="display: none;" class="dropdown-menu sub-menu-level1 bold">
+                                 <li>
+                                   <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                         <li> <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                            <li> <asp:LinkButton ID="LinkButton5" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                                <li><asp:LinkButton ID="LinkButton6" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                                 <li>  <asp:LinkButton ID="LinkButton7" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton></li>
+                                                    <li>  <asp:LinkButton ID="LinkButton8" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Penyidik/Penyidik.aspx" Text="Master Penyidik"></asp:LinkButton>
+                                 </li>
+                                 </ul>
+                                 </li>
+                                   
+                            </ul>
+                        </li>
+                        <li class="dropdown"><asp:LinkButton ID="LinkButton1" runat="server" Text="Report" CausesValidation=false ></asp:LinkButton>
+                            <ul class="dropdown-menu bold">
+                                <li><asp:LinkButton ID="DashboardAnswerButton" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Report/DashboardAnswer.aspx" Text="Dashboard Kuesioner"></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="DashboardVisitorLinkButton" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Report/ReportDashboardVisitor.aspx" Text="Dashboard Visitor"></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="ReportQuestionLinkButton" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Report/ReportQuestionResult.aspx" Text="Dashboard Question"></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="ReportVisitorButton" runat="server" CausesValidation=false PostBackUrl="~/Administrator/Report/ReportVisitor.aspx" Text="Report Visitor"></asp:LinkButton></li>                                
+                            </ul>
+                        </li>
+                    </ul>                 
+                    </nav>  --%>
+            </div>
+            <div style="margin-left: 75%; margin-top: -77px; margin-right: -6px; vertical-align: middle;">
+                <table width="100%" cellpadding="3" cellspacing="0">
+                    <tr>
+                        <td align="right">
+                            <table width="0" cellpadding="3" cellspacing="10">
+                                <tr valign="middle">
+                                    <td style="padding-right:10px;">
+                                        <asp:Label ID="LoginNameLabel" runat="server" Style="color: #E8DDCF; font-weight: bold;
+                                            font-family: Comic Sans MS; font-size: small;" />
+                                    </td>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td id="UserImage" runat="server" >
+                                                    <%--<asp:Image ID="UserImage" runat="server" ImageUrl="~/Content/images/picmessage.png"
+                                                    Style="border-radius: 50%  50%  50%  50%; width: 40px; height: 40px;" />--%>
+                                                </td>
+                                                <td id="UserGuide" runat="server" >
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <asp:Button ID="LogoutButton" runat="server" OnClick="LogoutButton_Click1" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <%--<div style="margin-left: 93%; margin-top: -91px; vertical-align: top;">
+                <asp:Button ID="LogoutButton" runat="server" OnClick="LogoutButton_Click1" />
+            </div>--%>
+        </div>
+        <div class="bgHeader">
+            <div style="margin-left: 95%; margin-bottom: 0px; margin-top: 3px;">
+                <asp:Image ID="logo" runat="server" ImageUrl="~/Content/Images/LOGO POLDA METRO JAYA.png"
+                    Width="93%" />
+            </div>
+        </div>
+        <%--<div style="padding-left: 35px; margin-top: -65px; padding-left: 17px;">--%>
+        <div style="padding-left: 35px; padding-left: 17px;">
+            <%--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--</ContentTemplate>
+            </asp:UpdatePanel>--%>
+        </div>
+        <div id="footer">
+            <div id="Footer-message">
+                Copyright © 2016 Kepolisian Negara Republik Indonesia
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessEntity\bin\Debug\Reskrimsus.BusinessEntity.dll.config
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessEntity\bin\Debug\Reskrimsus.BusinessEntity.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessEntity\bin\Debug\Reskrimsus.BusinessEntity.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessEntity\obj\Debug\Reskrimsus.BusinessEntity.Properties.Resources.resources
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessEntity\obj\Debug\Reskrimsus.BusinessEntity.csproj.GenerateResource.Cache
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessEntity\obj\Debug\Reskrimsus.BusinessEntity.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessEntity\obj\Debug\Reskrimsus.BusinessEntity.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.BusinessEntity\obj\Debug\Reskrimsus.BusinessEntity.csprojResolveAssemblyReference.cache

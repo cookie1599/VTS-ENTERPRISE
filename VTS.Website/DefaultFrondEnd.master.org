@@ -1,0 +1,716 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DefaultFrondEnd.master.cs"
+    Inherits="DefaultFrondEnd" EnableViewState="true" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%--MENU RESPONSIVE--%>
+    <link rel="stylesheet" href="Content/Css/normalize.min.css" />
+    <link rel="stylesheet" href="Content/Css/defaults.min.css" />
+    <link rel="stylesheet" href="Content/Css/nav-core.min.css" />
+    <link rel="stylesheet" href="Content/css/nav-layout.min.css" />
+    <link rel="icon" href="logo-sidik-sakti-polda.ico" />
+    <%--MENU--%>
+    <asp:Literal ID="jquery142Literal" runat="server" />
+    <asp:Literal ID="RemminjsLiteral" runat="server" />
+    <link type="text/css" href="Content/Css/Style.css" rel="Stylesheet" />
+    <link type="text/css" href="Content/Css/menu.css" rel="Stylesheet" />
+    <script src="Content/Js/flux.min.js" type="text/javascript"></script>
+
+    <script src="Content/Js/custom.js" type="text/javascript"></script>
+
+    <%--JS NIVO SLIDER--%>
+    <asp:Literal ID="jqueryMinjsLiteral" runat="server" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+    <asp:Literal ID="CoinsliderLiteral" runat="server" />
+    <link rel="stylesheet" href="Content/Css/coin-slider-styles.css" type="text/css" />
+    <asp:Literal ID="CustomjsLiteral" runat="server" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .overText {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 40%;
+            line-height: 2;
+            max-height: 70px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+
+        .cntr {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
+
+            .cntr .cntr-innr {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+        .search {
+            display: inline-block;
+            position: relative;
+            height: 30px;
+            width: 30px;
+            box-sizing: border-box;
+            margin: 0px 8px 7px 0px;
+            padding: 7px 9px 0px 9px;
+            border: 3px solid #000000;
+            border-radius: 25px;
+            -webkit-transition: all 200ms ease;
+            transition: all 200ms ease;
+            cursor: text;
+        }
+
+            .search:after {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 20px;
+                right: -5px;
+                top: 21px;
+                background: #000000;
+                border-radius: 3px;
+                -webkit-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                -webkit-transition: all 200ms ease;
+                transition: all 200ms ease;
+            }
+
+            .search.active,
+            .search:hover {
+                width: 400px;
+                margin-right: 0px;
+            }
+
+                .search.active:after,
+                .search:hover:after {
+                    height: 0px;
+                }
+
+            .search input {
+                width: 100%;
+                border: none;
+                box-sizing: border-box;
+                font-family: Helvetica;
+                font-size: 12px;
+                color: inherit;
+                background: transparent;
+                outline-width: 0px;
+            }
+
+        .nav-button, .nav-close {
+            background: white !important;
+        }
+
+        .navmb {
+            background: white !important;
+        }
+
+            .navmb ul {
+                background: white !important;
+            }
+
+            .navmb a, .navmb a:active, .navmb a:hover, .navmb a:visited {
+                color: black !important;
+                font-size: large !important;
+            }
+
+            .navmb li.navmb-active > a, .navmb li:hover > a {
+                background: white !important;
+            }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="leaderboard">
+            <div id="block-views-home-block_6">
+                <div class="header">
+                    <div class="head1">
+                        DIREKTORAT RESERSE KRIMINAL KHUSUS
+                    </div>
+                    <div class="head2">
+                        POLDA METROPOLITAN JAKARTA RAYA
+                    </div>
+                    <%--<asp:Image ID="LogoImage" runat="server" ImageUrl="~/Content/Css/Images/header_logo.png" />--%>
+                </div>
+                <div class="navbar">
+                    <div class="block-inner">
+                        <asp:HiddenField ID="MenuId" runat="server" />
+                        <asp:HiddenField ID="RowCountHidden" runat="server" />
+                        <asp:HiddenField ID="RowCountLinkHidden" runat="server" />
+                        <asp:HiddenField ID="RowCountInfoHidden" runat="server" />
+                        <asp:HiddenField ID="RowCountDPOHidden" runat="server" />
+                        <asp:HiddenField ID="PageNewsHidden" runat="server" />
+                        <asp:HiddenField ID="PageDPOHidden" runat="server" />
+                        <asp:HiddenField ID="PageLinkHidden" runat="server" />
+                        <asp:HiddenField ID="PageInfoHidden" runat="server" />
+                        <asp:HiddenField ID="ImageURLHidden" runat="server" />
+                        <nav>
+                            <ul class="nav topnav bold">
+                                <li class="dropdown" id="Beranda">
+                                    <asp:LinkButton ID="HalamanDepanLink" runat="server"
+                                        Text="Beranda" ForeColor="White" PostBackUrl="~/Home.aspx?Menuid=" CausesValidation="false"></asp:LinkButton></li>
+                                <%--onclick="HalamanDepanLink_Click" --%>
+                                <li class="dropdown" id="StrukturOrganisasi">
+                                    <asp:LinkButton ID="LinkButton1" runat="server" Text="Organisasi" ForeColor="White" CausesValidation="false"></asp:LinkButton>
+                                    <ul class="dropdown-menu bold">
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton48" runat="server" CausesValidation="false" PostBackUrl="Home.aspx" Text="- Arti Logo Reskrim"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton49" runat="server" CausesValidation="false" PostBackUrl="Home.aspx" Text="- Ttg Dit Reskrimsus"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton50" runat="server" CausesValidation="false" PostBackUrl="Home.aspx" Text="- Visi dan Misi"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="OSLinkButton" runat="server" CausesValidation="false" PostBackUrl="~/StrukturOrganisasi/BaganSO.aspx?Id=1&Menuid=0" Text="- Bagan Struktur"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton51" runat="server" CausesValidation="false" PostBackUrl="Home.aspx" Text="- Tugas Fungsi :"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="DirReskrimsusLinkButton" runat="server" CausesValidation="false" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=1&Menuid=0" Text="Dir Reskrimsus"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton4" runat="server" CausesValidation="false" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=2&Menuid=0" Text="Wadir Reskrimsus"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="kasubditILinkButton" runat="server" CausesValidation="false" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=3&Menuid=0" Text="Kasubdit I / Indag"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="kasubditIILinkButton" runat="server" CausesValidation="false" Text="Kasubdit II / Fismondev" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=4&Menuid=0"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="kasubditIIILinkButton" runat="server" CausesValidation="false" Text="Kasubdit III/ Sumdaling" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=5&Menuid=0"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="kasubditIVLinkButton" runat="server" CausesValidation="false" Text="Kasubdit IV / Cyber Crime" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=6&Menuid=0"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="kasubditVLinkButton" runat="server" CausesValidation="false" Text="Kasubdit V / Korupsi" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=7&Menuid=0"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton5" runat="server" CausesValidation="false" Text="Kabag Bin Opsnal" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=8&Menuid=0"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="BagwasdigLinkButton" runat="server" CausesValidation="false" Text="KaBag Wassidik" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=9&Menuid=0"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton6" runat="server" CausesValidation="false" Text="Kasubbag Renmin" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=10&Menuid=0"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="KorwasPPNSLinkButton" runat="server" CausesValidation="false" Text="Korwas PPNS" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=11&Menuid=0"></asp:LinkButton></li>
+                                        <%--<li><asp:LinkButton ID="KabagAnalisisLinkButton" runat="server" CausesValidation=false Text="Kabag Analisis" PostBackUrl="~/StrukturOrganisasi/KabagAnalisis.aspx?Menuid=1"></asp:LinkButton></li>--%>
+                                    </ul>
+                                </li>
+                                <li class="dropdown" id="layananMasyarakat">
+                                    <asp:LinkButton ID="LinkButton20" runat="server" Text="Layanan Masyarakat" ForeColor="White" CausesValidation="false"></asp:LinkButton>
+                                    <ul class="dropdown-menu bold">
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton21" CausesValidation="false" runat="server" Text="Laporan Masyarakat" PostBackUrl="~/LayananMasyarakat/LaporanMasyarakat.aspx?MenuId=1"></asp:LinkButton></li>
+                                        <%--  <li><asp:LinkButton ID="LinkButton22" runat="server" CausesValidation=false Text="Himbauan" PostBackUrl="~/LayananMasyarakat/Himbauan.aspx?MenuId=0"></asp:LinkButton></li>--%>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton39" runat="server" CausesValidation="false" Text="Info SP2HP" PostBackUrl="~/Info/InfoPenyidikan.aspx?Menuid=1"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton2" runat="server" Text="Registrasi Kunjungan" CausesValidation="false" PostBackUrl="~/RequestKunjungan/RequestKunjungan.aspx?MenuId=1"></asp:LinkButton></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown" id="Info">
+                                    <asp:LinkButton ID="LinkButton11" runat="server" Text="Info" ForeColor="White"></asp:LinkButton>
+                                    <ul class="dropdown-menu bold">
+                                        <%--<li><asp:LinkButton ID="LinkButton12" runat="server" CausesValidation=false Text="Berita" PostBackUrl="~/Info/Berita/Daftar Nama Nomor Rekening Bank Terkait Dengan Penipuan.aspx?Menuid=2"></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="LinkButton13" runat="server" CausesValidation=false Text="Informasi" PostBackUrl="~/Info/Informasi/Jenis Modus Operandi.aspx?Menuid=2"></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="LinkButton16" runat="server" CausesValidation=false Text="DPO" PostBackUrl="~/Info/DPO.aspx?Menuid="></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="LinkButton17" runat="server" CausesValidation=false Text="Info Penyidikan" PostBackUrl="~/Info/InfoPenyidikan.aspx?Menuid=1"></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="LinkButton18" runat="server" CausesValidation=false Text="Statistik" PostBackUrl="~/Info/Statistik.aspx?Menuid="></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="LinkButton19" runat="server" CausesValidation=false Text="Undang - Undang" PostBackUrl="~/Info/Undang-Undang.aspx?Menuid=2"></asp:LinkButton></li>
+                                <li><asp:LinkButton ID="LinkButton3" runat="server" CausesValidation=false Text="Peraturan/Keputusan" PostBackUrl="~/Info/Peraturan.aspx?Menuid=2"></asp:LinkButton></li>--%>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton12" runat="server" CausesValidation="false" Text="Berita" PostBackUrl="~/Info/Berita/Berita.aspx?Id=&menuid=3"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton13" runat="server" CausesValidation="false" Text="Informasi" PostBackUrl="~/Info/Informasi/Informasi.aspx?Id=&menuid=4"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton16" runat="server" CausesValidation="false" Text="DPO" PostBackUrl="~/Info/DPO/DPO.aspx?Id=&menuid=5"></asp:LinkButton></li>
+                                        <%--    <li><asp:LinkButton ID="LinkButton18" runat="server" CausesValidation=false Text="Statistik" PostBackUrl="~/Info/Statistik.aspx"></asp:LinkButton></li>--%>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton19" runat="server" CausesValidation="false" Text="Undang - Undang" PostBackUrl="~/Info/Undang-Undang.aspx?Menuid=3"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="false" Text="Peraturan/Keputusan" PostBackUrl="~/Info/Peraturan.aspx?Menuid=3"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton47" runat="server" CausesValidation="false" Text="Zona Integritas" PostBackUrl="Home.aspx"></asp:LinkButton></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown" id="Galery">
+                                    <asp:LinkButton ID="LinkButton7" runat="server" Text="Galeri" ForeColor="White"></asp:LinkButton>
+                                    <ul class="dropdown-menu bold">
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton14" runat="server" Text="Video" CausesValidation="false" PostBackUrl="~/Gallery/Video.aspx?Menuid=0"></asp:LinkButton></li>
+                                        <li>
+                                            <asp:LinkButton ID="LinkButton15" runat="server" Text="Event" CausesValidation="false" PostBackUrl="~/Gallery/Event.aspx?Menuid=0"></asp:LinkButton></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown" id="LayananInternal">
+                                    <asp:LinkButton ID="LinkButton23" runat="server" Text="Layanan Internal" CausesValidation="false" ForeColor="White" PostBackUrl="http://reskrimsus.org/webmail"> </asp:LinkButton></li>
+                                <li class="dropdown" id="LokasiKami">
+                                    <asp:LinkButton ID="LinkButton24" runat="server" Text="Lokasi Kami" CausesValidation="false" ForeColor="White" PostBackUrl="~/HubungiKami/HubungiKami.aspx?MenuId=1"></asp:LinkButton></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <header>
+                    <asp:Image ID="LogoPolda" Width="38px" runat="server" ImageUrl="~/Content/Css/Images/Logo-metro-jaya.png" />
+                </header>
+                <a href="#" class="nav-button">Menu</a>
+                <nav class="navmb">
+                    <ul>
+                        <li>
+                            <asp:LinkButton ID="LinkButton8" runat="server" Text="Beranda" PostBackUrl="~/Home.aspx?Menuid=" CausesValidation="false"></asp:LinkButton></li>
+                        <li class="nav-submenu"><a href="#">Organisasi</a>
+                            <ul>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton9" runat="server" CausesValidation="false" PostBackUrl="~/StrukturOrganisasi/BaganSO.aspx?Id=1&Menuid=0" Text="Bagan Struktur"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton10" runat="server" CausesValidation="false" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=1&Menuid=0" Text="Dir Reskrimsus"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton18" runat="server" CausesValidation="false" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=2&Menuid=0" Text="Wadir Reskrimsus"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton22" runat="server" CausesValidation="false" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=3&Menuid=0" Text="Kasubdit I / Indag"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton25" runat="server" CausesValidation="false" Text="Kasubdit II / Fismondev" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=4&Menuid=0"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton26" runat="server" CausesValidation="false" Text="Kasubdit III/ Sumdaling" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=5&Menuid=0"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton27" runat="server" CausesValidation="false" Text="Kasubdit IV / Cyber Crime" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=6&Menuid=0"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton28" runat="server" CausesValidation="false" Text="Kasubdit V / Korupsi" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=7&Menuid=0"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton29" runat="server" CausesValidation="false" Text="Kabag Bin Opsnal" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=8&Menuid=0"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton30" runat="server" CausesValidation="false" Text="KaBag Wassidik" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=9&Menuid=0"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton31" runat="server" CausesValidation="false" Text="Kasubbag Renmin" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=10&Menuid=0"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton32" runat="server" CausesValidation="false" Text="Korwas PPNS" PostBackUrl="~/StrukturOrganisasi/StrukturOrganisasi.aspx?Id=11&Menuid=0"></asp:LinkButton></li>
+                            </ul>
+                        </li>
+                        <li class="nav-submenu">
+                            <asp:LinkButton ID="LinkButton33" runat="server" Text="Layanan Masyarakat" CausesValidation="false"></asp:LinkButton>
+                            <ul class="nav-submenu">
+                                <li>
+                                    <asp:LinkButton ID="LinkButton34" CausesValidation="false" runat="server" Text="Laporan Masyarakat" PostBackUrl="~/LayananMasyarakat/LaporanMasyarakat.aspx?MenuId=1"></asp:LinkButton></li>
+                                <%--  <li><asp:LinkButton ID="LinkButton22" runat="server" CausesValidation=false Text="Himbauan" PostBackUrl="~/LayananMasyarakat/Himbauan.aspx?MenuId=0"></asp:LinkButton></li>--%>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton17" runat="server" CausesValidation="false" Text="Info SP2HP" PostBackUrl="~/Info/InfoPenyidikan.aspx?Menuid=1"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton35" runat="server" Text="Registrasi Kunjungan" CausesValidation="false" PostBackUrl="~/RequestKunjungan/RequestKunjungan.aspx?MenuId=1"></asp:LinkButton></li>
+                            </ul>
+                        </li>
+                        <li class="nav-submenu"><a href="#">Info</a>
+                            <ul>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton36" runat="server" CausesValidation="false" Text="Berita" PostBackUrl="~/Info/Berita/Berita.aspx?Id=&menuid=3"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton37" runat="server" CausesValidation="false" Text="Informasi" PostBackUrl="~/Info/Informasi/Informasi.aspx?Id=&menuid=4"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton38" runat="server" CausesValidation="false" Text="DPO" PostBackUrl="~/Info/DPO/DPO.aspx?Id=&menuid=5"></asp:LinkButton></li>
+                                <%--<li>
+                                    <asp:LinkButton ID="LinkButton39" runat="server" CausesValidation="false" Text="Info Penyidikan" PostBackUrl="~/Info/InfoPenyidikan.aspx?Menuid=1"></asp:LinkButton></li>--%>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton40" runat="server" CausesValidation="false" Text="Undang - Undang" PostBackUrl="~/Info/Undang-Undang.aspx?Menuid=3"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton41" runat="server" CausesValidation="false" Text="Peraturan/Keputusan" PostBackUrl="~/Info/Peraturan.aspx?Menuid=3"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton46" runat="server" CausesValidation="false" Text="Zona Integritas" PostBackUrl="~/Home.aspx"></asp:LinkButton></li>
+                            </ul>
+                        </li>
+                        <li class="nav-submenu"><a href="#">Galeri</a>
+                            <ul class="nav-submenu">
+                                <li>
+                                    <asp:LinkButton ID="LinkButton42" runat="server" Text="Video" CausesValidation="false" PostBackUrl="~/Gallery/Video.aspx?Menuid=0"></asp:LinkButton></li>
+                                <li>
+                                    <asp:LinkButton ID="LinkButton43" runat="server" Text="Event" CausesValidation="false" PostBackUrl="~/Gallery/Event.aspx?Menuid=0"></asp:LinkButton></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="LinkButton44" runat="server" Text="Layanan Internal" CausesValidation="false" PostBackUrl="http://reskrimsus.org:2095/"> </asp:LinkButton></li>
+                        <li>
+                            <asp:LinkButton ID="LinkButton45" runat="server" Text="Lokasi Kami" CausesValidation="false" PostBackUrl="~/HubungiKami/HubungiKami.aspx?MenuId=1"></asp:LinkButton></li>
+                    </ul>
+                </nav>
+                <%-- <script type="text/javascript" src="Content/Js/nav.jquery-3.1.1.min.js"></script>--%>
+                <asp:Literal ID="navjqueryminjsLiteral" runat="server" />
+                <script type="text/javascript">
+                    $('.navmb').nav();
+                </script>
+                <div class="logo">
+                    <div class="LogoPolda">
+                        <asp:Image ID="LogoPoldaImage" Width="78%" runat="server" ImageUrl="~/Content/Css/Images/Logo-metro-jaya.png" />
+                    </div>
+                    <div class="sidiksakti">
+                        <asp:Image Width="78%" ID="LogoSidikSaktiImage" runat="server" ImageUrl="~/Content/Css/Images/logo-sidik-sakti-polda.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="block-views-home-block_1">
+                <div class="block-inner">
+                    <div class="container" style="width: 100%">
+                        <div class="cntr" style="display: none;">
+                            <div class="cntr-innr">
+                                <asp:Panel DefaultButton="SearchButton" runat="server" ID="Panel3">
+                                    <label class="search" for="KeywordAllTextBox">
+                                        <asp:TextBox ID="KeywordAllTextBox" runat="server"></asp:TextBox>
+                                    </label>
+                                </asp:Panel>
+                            </div>
+                        </div>
+                        <div id="sliderold">
+                            <%--<div class="foreground">
+                        </div>--%>
+                            <asp:Repeater EnableViewState="true" ID="RepeaterBanner" runat="server" OnItemDataBound="RepeaterBanner_ItemDataBound">
+                                <ItemTemplate>
+                                    <asp:Image ID="ImageBanner" runat="server" alt="" Width="920px" Height="265px" Visible="false" />
+                                </ItemTemplate>
+                            </asp:Repeater>
+                            <%-- <div class="foreground">
+                        </div>--%>
+                        </div>
+                        <div id="slider" runat="server" style="display: block;">
+                            <div id="coin-slider">
+                                <asp:Repeater ID="RepeaterSlider" runat="server" OnItemDataBound="RepeaterSlider_ItemDataBound"
+                                    OnItemCommand="RepeaterSlider_ItemCommand">
+                                    <ItemTemplate>
+                                        <asp:HyperLink ID="RedirectHyperlink" runat="server">
+                                            <asp:Image ID="BannerImage" runat="server" Width="100%" />
+                                            <span>
+                                                <h2>
+                                                    <asp:Literal ID="TitleLiteral" runat="server"></asp:Literal>
+                                                </h2>
+                                                <hr />
+                                                <br />
+                                                <p>
+                                                    <asp:Literal ID="BodyLiteral" runat="server"></asp:Literal>
+                                                </p>
+                                                <table id="himbauan">
+                                                    <tr style="background-color: #000000;">
+                                                        <td class="titleHimbauan">HIMBAUAN :
+                                                        </td>
+                                                        <td style="color: white;">
+                                                            <marquee><asp:Literal ID="HimbauanLiteral" runat="server"></asp:Literal></marquee>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </asp:HyperLink>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                                <asp:HiddenField ID="HimbuanHiddenField" runat="server" />
+                                <div style="z-index: 99999; position: fixed; width: 100%; margin: 658px auto auto; text-align: center;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $('#coin-slider').coinslider();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="container">
+                <div id="columns">
+                    <div class="columns-inner clearfix">
+                        <div id="content-column">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                        <asp:Panel ID="SidebarFirstPanel" runat="server">
+                            <div id="sidebar-first" class="sidebar">
+                                <asp:Panel ID="NewsPanel" runat="server">
+                                    <div id="block-views-form-block_1" class="block block-views odd block-region-sidebar-first block-count-5">
+                                        <div class="block-inner">
+                                            <h2>Berita</h2>
+                                            <div class="content">
+                                                <div class="view view-form view-id-form view-display-id-block_1 ">
+                                                    <div class="view-content">
+                                                        <asp:Repeater runat="server" ID="ListRepeater" OnItemCommand="ListRepeater_ItemCommand"
+                                                            OnItemDataBound="ListRepeater_ItemDataBound">
+                                                            <ItemTemplate>
+                                                                <div class="views-row-unformatted">
+                                                                    <div class="title">
+                                                                        <div class="sep" style="height: 21px;">
+                                                                        </div>
+                                                                        <div class="title">
+                                                                            <asp:HyperLink ID="NewsHyperLink" runat="server"></asp:HyperLink>
+                                                                            <asp:Literal ID="NewsNameLiteral" Visible="false" runat="server"></asp:Literal>
+                                                                        </div>
+                                                                        <div class="clear">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </ItemTemplate>
+                                                        </asp:Repeater>
+                                                        <asp:Panel DefaultButton="DataPagerButton" ID="DataPagerPanel" runat="server">
+                                                            <table border="0" cellpadding="2" cellspacing="0">
+                                                                <tr>
+                                                                    <td>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <asp:Button ID="DataPagerButton" runat="server" OnClick="DataPagerButton_Click" />
+                                                                                    <asp:Repeater EnableViewState="true" ID="DataPagerTopRepeater" runat="server" OnItemCommand="DataPagerTopRepeater_ItemCommand"
+                                                                                        OnItemDataBound="DataPagerTopRepeater_ItemDataBound">
+                                                                                        <ItemTemplate>
+                                                                                            <td>
+                                                                                                <asp:LinkButton ID="PageNumberLinkButton" OnClick="PageClick" runat="server" CssClass="PageNumberLinkButton2"></asp:LinkButton>
+                                                                                                <asp:TextBox Visible="false" ID="PageNumberTextBox" runat="server" Width="20px"></asp:TextBox>
+                                                                                            </td>
+                                                                                        </ItemTemplate>
+                                                                                    </asp:Repeater>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </asp:Panel>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </asp:Panel>
+                                <asp:Panel ID="InfoPanel" runat="server">
+                                    <div id="block-views-form-block_2" class="block block-views even block-region-sidebar-first block-count-6">
+                                        <div class="block-inner">
+                                            <h2>Informasi</h2>
+                                            <div class="content">
+                                                <div class="view view-form view-id-form view-display-id-block_2 ">
+                                                    <div class="view-content">
+                                                        <asp:Repeater runat="server" ID="ListRepeaterInfo" OnItemCommand="ListRepeaterInfo_ItemCommand"
+                                                            OnItemDataBound="ListRepeaterInfo_ItemDataBound">
+                                                            <ItemTemplate>
+                                                                <div class="views-row-unformatted">
+                                                                    <div class="title">
+                                                                        <div class="sep" style="height: 21px;">
+                                                                        </div>
+                                                                        <div class="title">
+                                                                            <asp:HyperLink ID="InfoHyperLink" runat="server"></asp:HyperLink>
+                                                                            <%--<asp:LinkButton ID="LinkButton" runat="server">
+                                                                            <asp:Literal ID="NameLiteral" runat="server"></asp:Literal></asp:LinkButton>--%>
+                                                                        </div>
+                                                                        <div class="clear">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </ItemTemplate>
+                                                        </asp:Repeater>
+                                                        <asp:Panel DefaultButton="DataPagerButton2" ID="Panel1" runat="server">
+                                                            <table border="0" cellpadding="2" cellspacing="0">
+                                                                <tr>
+                                                                    <td>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <asp:Button ID="DataPagerButton2" runat="server" OnClick="DataPagerButton2_Click" />
+                                                                                    <asp:Repeater EnableViewState="true" ID="DataPagerTopRepeater2" runat="server" OnItemCommand="DataPagerTopRepeater2_ItemCommand"
+                                                                                        OnItemDataBound="DataPagerTopRepeater2_ItemDataBound">
+                                                                                        <ItemTemplate>
+                                                                                            <td>
+                                                                                                <asp:LinkButton ID="PageNumberLinkButton" runat="server" CssClass="PageNumberLinkButton2"></asp:LinkButton>
+                                                                                                <asp:TextBox Visible="false" ID="PageNumberTextBox" runat="server" Width="20px"></asp:TextBox>
+                                                                                            </td>
+                                                                                        </ItemTemplate>
+                                                                                    </asp:Repeater>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </asp:Panel>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </asp:Panel>
+                                <asp:Panel ID="DPOPanel" runat="server">
+                                    <div id="block-views-form-block_3" class="block block-views even block-region-sidebar-first block-count-6">
+                                        <div class="block-inner">
+                                            <h2>DPO
+                                            </h2>
+                                            <div class="content">
+                                                <div class="view view-form view-id-form view-display-id-block_3 ">
+                                                    <div class="view-content">
+                                                        <asp:Repeater runat="server" ID="ListRepeaterDPO" OnItemCommand="ListRepeaterDPO_ItemCommand"
+                                                            OnItemDataBound="ListRepeaterDPO_ItemDataBound">
+                                                            <ItemTemplate>
+                                                                <div class="views-row-unformatted">
+                                                                    <div class="title">
+                                                                        <div class="sep" style="height: 21px;">
+                                                                        </div>
+                                                                        <div class="title">
+                                                                            <asp:LinkButton ID="LinkButton" runat="server">
+                                                                                <asp:Literal ID="NameLiteral" runat="server"></asp:Literal>
+                                                                            </asp:LinkButton>
+                                                                        </div>
+                                                                        <div class="clear">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </ItemTemplate>
+                                                        </asp:Repeater>
+                                                        <asp:Panel DefaultButton="DataPagerButton3" ID="Panel2" runat="server">
+                                                            <table border="0" cellpadding="2" cellspacing="0">
+                                                                <tr>
+                                                                    <td>
+                                                                        <table>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <asp:Button ID="DataPagerButton3" runat="server" OnClick="DataPagerButton3_Click" />
+                                                                                    <asp:Repeater EnableViewState="true" ID="DataPagerTopRepeater3" runat="server" OnItemCommand="DataPagerTopRepeater3_ItemCommand"
+                                                                                        OnItemDataBound="DataPagerTopRepeater3_ItemDataBound">
+                                                                                        <ItemTemplate>
+                                                                                            <td>
+                                                                                                <asp:LinkButton ID="PageNumberLinkButton" runat="server" CssClass="PageNumberLinkButton2"></asp:LinkButton>
+                                                                                                <asp:TextBox Visible="false" ID="PageNumberTextBox" runat="server" Width="20px"></asp:TextBox>
+                                                                                            </td>
+                                                                                        </ItemTemplate>
+                                                                                    </asp:Repeater>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </asp:Panel>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </asp:Panel>
+                            </div>
+                        </asp:Panel>
+                        <asp:Panel ID="SidebarLastPanel" runat="server">
+                            <div id="sidebar-last" class="sidebar">
+                                <div id="block-faceted_search_ui-2_keyword" class="block block-faceted_search_ui odd block-region-sidebar-last block-count-5">
+                                    <div class="block-inner">
+                                        <h2>Keyword search</h2>
+                                        <div class="content" style="border-radius: 5px; margin-top: -13px;">
+                                            <form id="faceted-search-ui-form-2" method="post" accept-charset="UTF-8" action="/info/berita">
+                                                <div align="center">
+                                                    <asp:Panel DefaultButton="SearchButton" runat="server" ID="SearchingPanel">
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <asp:TextBox ID="KeywordTextBox" Width="130" CssClass="form-text" runat="server"></asp:TextBox>
+                                                                </td>
+                                                                <td>
+                                                                    <asp:ImageButton ID="SearchButton" runat="server" ImageUrl="~/Content/Css/Images/btn_search.jpg"
+                                                                        OnClick="SearchButton_Click" Style="margin-top: 10px;" />
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </asp:Panel>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="block-hits_counter-1" class="block block-hits_counter even block-region-sidebar-last block-count-6">
+                                    <div class="block-inner">
+                                        <h2>Hits Counter</h2>
+                                        <div class="content">
+                                            <div class="label">
+                                                Jumlah Pengunjung Website Ini :
+                                            </div>
+                                            <%--<div class="value">
+                                            329082</div>--%>
+                                            <script type="text/javascript" src="http://counter9.freecounter.ovh/private/counter.js?c=4e95ba710298ab2b04c83d682ccb7c98"></script>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="block-views-home-block_5" class="block block-views odd block-region-sidebar-last block-count-7">
+                                    <div class="block-inner">
+                                        <h2>Links</h2>
+                                        <div class="content">
+                                            <div class="view view-home view-id-home view-display-id-block_5 views-processed">
+                                                <div class="view-content">
+                                                    <%--<div class="views-row-unformatted views-row views-row-1 views-row-odd views-row-first">
+                                                    <div class="title">
+                                                        <a title="Kepolisian Negara RI" href="http://www.polri.go.id/">Kepolisian Negara RI</a>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row-unformatted views-row views-row-2 views-row-even">
+                                                    <div class="title">
+                                                        <a title="Bareskrim POLRI" href="http://www.bareskrim.go.id/">Bareskrim POLRI</a>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row-unformatted views-row views-row-3 views-row-odd">
+                                                    <div class="title">
+                                                        <a title="Depkumham" href="http://www.kemenkumham.go.id/">Depkumham</a>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row-unformatted views-row views-row-4 views-row-even">
+                                                    <div class="title">
+                                                        <a title="Depkominfo" href="http://www.depkominfo.go.id/">Depkominfo</a>
+                                                    </div>
+                                                </div>
+                                                <div class="views-row-unformatted views-row views-row-5 views-row-odd views-row-last">
+                                                    <div class="title">
+                                                        <a title="Kejaksaan Agung RI" href="http://www.kejaksaan.go.id/">Kejaksaan Agung RI</a>
+                                                    </div>
+                                                </div>--%>
+                                                    <asp:Repeater runat="server" ID="ListRepeaterLink" OnItemCommand="ListRepeaterLink_ItemCommand"
+                                                        OnItemDataBound="ListRepeaterLink_ItemDataBound">
+                                                        <ItemTemplate>
+                                                            <div class="views-row-unformatted">
+                                                                <div class="title">
+                                                                    <%--<asp:LinkButton ID="LinkButton" runat="server">
+                                                                    <asp:Literal ID="NameLiteral" runat="server"></asp:Literal></asp:LinkButton>--%>
+                                                                    <asp:HyperLink ID="LinksHyperLink" runat="server"></asp:HyperLink>
+                                                                </div>
+                                                            </div>
+                                                        </ItemTemplate>
+                                                    </asp:Repeater>
+                                                    <asp:Button ID="DataPagerButton4" runat="server" OnClick="DataPagerButton4_Click" />
+                                                    <asp:Repeater EnableViewState="true" ID="DataPagerTopRepeater4" runat="server" OnItemCommand="DataPagerTopRepeater4_ItemCommand"
+                                                        OnItemDataBound="DataPagerTopRepeater4_ItemDataBound">
+                                                        <ItemTemplate>
+                                                            <td>
+                                                                <asp:LinkButton ID="PageNumberLinkButton" runat="server" CssClass="PageNumberLinkButton2"></asp:LinkButton>
+                                                                <asp:TextBox Visible="false" ID="PageNumberTextBox" runat="server" Width="20px"></asp:TextBox>
+                                                            </td>
+                                                        </ItemTemplate>
+                                                    </asp:Repeater>
+                                                </div>
+                                                <div class="item-list">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </asp:Panel>
+                    </div>
+                </div>
+            </div>
+            <%--<script language="javascript" src="Content/Js/jquery.js" type="text/javascript"></script>--%>
+        </div>
+        <div id="footer">
+            <div id="Footer-message">
+                Copyright © 2016 Kepolisian Negara Republik Indonesia
+            </div>
+        </div>
+    </form>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <%--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57dbb9fa0b067a4d"></script>--%>
+    <script type="text/javascript">
+        //script here
+        $("#KeywordAllTextBox").on('focus', function () {
+            $(this).parent('label').addClass('active');
+        });
+
+        $("#KeywordAllTextBox").on('blur', function () {
+            if ($(this).val().length == 0)
+                $(this).parent('label').removeClass('active');
+        });
+    </script>
+</body>
+</html>

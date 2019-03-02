@@ -1,0 +1,6 @@
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.Mapping\bin\Debug\Reskrimsus.Mapping.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.Mapping\bin\Debug\Reskrimsus.Mapping.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.Mapping\obj\Debug\Reskrimsus.Mapping.Properties.Resources.resources
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.Mapping\obj\Debug\Reskrimsus.Mapping.csproj.GenerateResource.Cache
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.Mapping\obj\Debug\Reskrimsus.Mapping.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.Mapping\obj\Debug\Reskrimsus.Mapping.pdb

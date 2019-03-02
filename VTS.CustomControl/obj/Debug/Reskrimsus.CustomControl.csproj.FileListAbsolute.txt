@@ -1,0 +1,13 @@
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\bin\Debug\Reskrimsus.CustomControl.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\bin\Debug\Reskrimsus.CustomControl.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\bin\Debug\Reskrimsus.BusinessEntity.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\bin\Debug\Reskrimsus.BusinessRule.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\bin\Debug\Reskrimsus.SystemConfig.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\bin\Debug\Reskrimsus.BusinessEntity.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\bin\Debug\Reskrimsus.BusinessRule.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\bin\Debug\Reskrimsus.SystemConfig.pdb
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\obj\Debug\Reskrimsus.CustomControl.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\obj\Debug\Reskrimsus.CustomControl.Properties.Resources.resources
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\obj\Debug\Reskrimsus.CustomControl.csproj.GenerateResource.Cache
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\obj\Debug\Reskrimsus.CustomControl.dll
+E:\WORK\VSS\RESKRIMSUS\Reskrimsus.CustomControl\obj\Debug\Reskrimsus.CustomControl.pdb

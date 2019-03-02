@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Reskrimsus.BusinessRule.csproj]
+SCC_Aux_Path = "Z:\VSS\POLDA2013"
+SCC_Project_Name = "$/Reskrimsus.root/Reskrimsus/Reskrimsus.BusinessRule", BCAAAAAA
+
+[VTS.BusinessRule.csproj]
+SCC_Aux_Path = "Z:\VSS\VTS"
+SCC_Project_Name = "$/VTS.root/VTS/VTS.BusinessRule", JCAAAAAA

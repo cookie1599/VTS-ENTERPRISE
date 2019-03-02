@@ -1,0 +1,98 @@
+
+/* ==== 
+www.freshdesignweb.com
+ ==== */
+
+/* ==== Google font ==== */
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,900,700|Open+Sans:300,400,600,700');
+/* === fontawesome === */
+@import url('font-awesome.css');
+/* === custom icon === */
+body {
+    margin: 0;
+    font-family: Tahoma; /*font-size: 14px;*/
+    line-height: 20px; /*color: #333333;*/
+    color: Black;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+/* --- header -- */
+header {
+    /*background: url(../img/header-pattern-150.png) repeat; 	margin:0; 	padding:0 0 20px; 	position:relative; 	z-index:2000;*/
+}
+
+    /* --- menu --- */
+
+    header .navigation {
+        float: right;
+    }
+
+    header ul.nav li {
+        border: none;
+        margin: 0;
+    }
+
+        header ul.nav li a {
+            border: none;
+            font-weight: 400;
+        }
+
+        header ul.nav li ul {
+            z-index: 1000;
+            margin-top: 20px;
+        }
+
+            header ul.nav li ul li ul {
+                margin: 1px 0 0 1px;
+            }
+
+        header ul.nav li a i {
+            color: #fff;
+        }
+
+/*.container, .navbar-static-top .container {
+    width: 940px;
+}*/
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    *zoom: 1;
+}
+
+    .container:before, .container:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+
+    .container:after {
+        clear: both;
+    }
+
+.dropdown {
+    position: relative;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+    .dropdown:hover {
+        background-color: #C2000B;
+    }
+
+@media (max-width: 480px) {
+    .container, .navbar-static-top .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .navbar .nav {
+        width: 85% !important;
+    }
+}

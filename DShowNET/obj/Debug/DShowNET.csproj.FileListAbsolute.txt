@@ -1,0 +1,14 @@
+E:\WORK\VSS\RESKRIMSUS\DShowNET\bin\Debug\DShowNET.dll
+E:\WORK\VSS\RESKRIMSUS\DShowNET\bin\Debug\DShowNET.pdb
+E:\WORK\VSS\RESKRIMSUS\DShowNET\obj\Debug\DShowNET.dll
+E:\WORK\VSS\RESKRIMSUS\DShowNET\obj\Debug\DShowNET.pdb
+E:\WORK\VSS\VTS ENTERPRISE\DShowNET\bin\Debug\DShowNET.dll
+E:\WORK\VSS\VTS ENTERPRISE\DShowNET\bin\Debug\DShowNET.pdb
+E:\WORK\VSS\VTS ENTERPRISE\DShowNET\obj\Debug\DShowNET.dll
+E:\WORK\VSS\VTS ENTERPRISE\DShowNET\obj\Debug\DShowNET.pdb
+E:\WORK\VSS\VTS ENTERPRISE\DShowNET\obj\Debug\DShowNET.csprojResolveAssemblyReference.cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DShowNET\bin\Debug\DShowNET.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DShowNET\bin\Debug\DShowNET.pdb
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DShowNET\obj\Debug\DShowNET.csprojResolveAssemblyReference.cache
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DShowNET\obj\Debug\DShowNET.dll
+E:\Working Folder\Visual Studio Project\VTS ENTERPRISE\DShowNET\obj\Debug\DShowNET.pdb

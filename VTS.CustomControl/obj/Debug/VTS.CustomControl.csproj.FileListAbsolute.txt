@@ -1,0 +1,13 @@
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\obj\Debug\VTS.CustomControl.csprojResolveAssemblyReference.cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\obj\Debug\VTS.CustomControl.Properties.Resources.resources
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\obj\Debug\VTS.CustomControl.csproj.GenerateResource.Cache
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\bin\Debug\VTS.CustomControl.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\bin\Debug\VTS.CustomControl.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\bin\Debug\VTS.BusinessEntity.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\bin\Debug\VTS.BusinessRule.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\bin\Debug\VTS.SystemConfig.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\bin\Debug\VTS.BusinessEntity.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\bin\Debug\VTS.BusinessRule.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\bin\Debug\VTS.SystemConfig.pdb
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\obj\Debug\VTS.CustomControl.dll
+E:\WORK\VSS\VTS ENTERPRISE\VTS.CustomControl\obj\Debug\VTS.CustomControl.pdb
